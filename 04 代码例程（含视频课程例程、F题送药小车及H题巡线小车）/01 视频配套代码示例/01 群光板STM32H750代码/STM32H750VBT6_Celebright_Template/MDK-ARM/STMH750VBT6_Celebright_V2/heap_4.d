@@ -1,0 +1,13 @@
+stmh750vbt6_celebright_v2\heap_4.o: ../Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.c
+stmh750vbt6_celebright_v2\heap_4.o: E:\CS_APPS\Keil\ARM\ARMCC\Bin\..\include\stdlib.h
+stmh750vbt6_celebright_v2\heap_4.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h
+stmh750vbt6_celebright_v2\heap_4.o: E:\CS_APPS\Keil\ARM\ARMCC\Bin\..\include\stddef.h
+stmh750vbt6_celebright_v2\heap_4.o: E:\CS_APPS\Keil\ARM\ARMCC\Bin\..\include\stdint.h
+stmh750vbt6_celebright_v2\heap_4.o: ../Core/Inc/FreeRTOSConfig.h
+stmh750vbt6_celebright_v2\heap_4.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h
+stmh750vbt6_celebright_v2\heap_4.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/portable.h
+stmh750vbt6_celebright_v2\heap_4.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/deprecated_definitions.h
+stmh750vbt6_celebright_v2\heap_4.o: ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F/portmacro.h
+stmh750vbt6_celebright_v2\heap_4.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/mpu_wrappers.h
+stmh750vbt6_celebright_v2\heap_4.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/task.h
+stmh750vbt6_celebright_v2\heap_4.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/list.h

@@ -1,0 +1,2 @@
+source D:/esp-idf/esp-project/IOT_BLE_client_celebright/build/gdbinit/symbols
+source D:/esp-idf/esp-project/IOT_BLE_client_celebright/build/gdbinit/connect

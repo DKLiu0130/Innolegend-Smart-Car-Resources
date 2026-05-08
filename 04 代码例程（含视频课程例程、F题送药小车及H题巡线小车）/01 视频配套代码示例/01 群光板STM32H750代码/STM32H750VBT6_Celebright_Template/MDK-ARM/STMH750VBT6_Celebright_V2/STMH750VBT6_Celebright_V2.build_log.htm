@@ -1,0 +1,306 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: ¦ÌVision V5.36.0.0
+Copyright (C) 2021 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: shiliu 3315254816@qq.com, whu, LIC=ZB4EI-T90HI-FWA2N-YMNT2-C3LTY-H8MVB
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Plus  Version: 5.36.0.0
+Toolchain Path:  E:\CS_APPS\Keil\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 7 (build 960)
+Assembler:       Armasm.exe V5.06 update 7 (build 960)
+Linker/Locator:  ArmLink.exe V5.06 update 7 (build 960)
+Library Manager: ArmAr.exe V5.06 update 7 (build 960)
+Hex Converter:   FromElf.exe V5.06 update 7 (build 960)
+CPU DLL:         SARMCM3.DLL V5.36.0.0
+Dialog DLL:      DCM.DLL V1.17.3.0
+Target DLL:      STLink\ST-LINKIII-KEIL_SWO.dll V3.0.9.0
+Dialog DLL:      TCM.DLL V1.53.0.0
+ 
+<h2>Project:</h2>
+E:\InnoLegend\routine\init_template\STM32H750VBT6_Celebright_Template\MDK-ARM\STMH750VBT6_Celebright_V2.uvprojx
+Project File Date:  01/14/2026
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 7 (build 960)', folder: 'E:\CS_APPS\Keil\ARM\ARMCC\Bin'
+Build target 'STMH750VBT6_Celebright_V2'
+assembling startup_stm32h750xx.s...
+compiling arm.c...
+..\Core\Src\arm.c(152): warning:  #186-D: pointless comparison of unsigned integer with zero
+      if(target->z < 0){
+..\Core\Src\arm.c(254): warning:  #870-D: invalid multibyte character sequence
+      printf("æœ¬åœ°åº§æ ‡ç³»ä¸‹,ä¸‰ä¸ªå¤¹è§’ä¸?: %.2f %.2f %.2f\n",
+..\Core\Src\arm.c(258): warning:  #870-D: invalid multibyte character sequence
+      printf("ç¬¬ä¸‰æ®µè§’åº¦ç±»åž?: ");
+..\Core\Src\arm.c(261): warning:  #870-D: invalid multibyte character sequence
+              printf("åž‚ç›´å‘ä¸Š (90åº?)\n");
+..\Core\Src\arm.c(267): warning:  #870-D: invalid multibyte character sequence
+              printf("æ°´å¹³ (0åº?)\n");
+..\Core\Src\arm.c(273): warning:  #870-D: invalid multibyte character sequence
+              printf("åž‚ç›´å‘ä¸‹ (-90åº?)\n");
+..\Core\Src\arm.c(301): warning:  #1-D: last line of file ends without a newline
+  }
+..\Core\Src\arm.c: 7 warnings, 0 errors
+compiling stm32h7xx_hal_msp.c...
+compiling car_control.c...
+../Core/Inc/pid.h(62): warning:  #1-D: last line of file ends without a newline
+   
+..\Core\Src\car_control.c(22): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+      Set_PID_Limit(&car_control.pid_line_pos,LIMIT_INC_POS,LIMIT_POS_POS,LIMIT_ITGR_POS);
+..\Core\Src\car_control.c(22): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+      Set_PID_Limit(&car_control.pid_line_pos,LIMIT_INC_POS,LIMIT_POS_POS,LIMIT_ITGR_POS);
+..\Core\Src\car_control.c: 3 warnings, 0 errors
+compiling holder2D.c...
+..\Core\Src\holder2D.c(19): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+      int position = (angle / 360.0) * 4096; 
+..\Core\Src\holder2D.c(26): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+      int position = (angle / 360.0) * 4096; 
+..\Core\Src\holder2D.c(39): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+      int offset = (angle / 360.0) * 4096; 
+..\Core\Src\holder2D.c(58): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+      float angle_n = atan(x) * (180.0f / 3.1415926);  // æ°´å¹³è§’ï¼ˆID6ï¼?
+..\Core\Src\holder2D.c(59): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+      float angle_m = atan(y) * (180.0f / 3.1415926);  // ä¿¯ä»°è§’ï¼ˆID8ï¼?
+..\Core\Src\holder2D.c(81): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+          float x = CENTER_X + r * 0.001 * cosf(theta);
+..\Core\Src\holder2D.c(82): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+          float y = CENTER_Y + r* 0.001 * sinf(theta);
+..\Core\Src\holder2D.c: 7 warnings, 0 errors
+compiling car_attitude.c...
+../Core/Inc/pid.h(62): warning:  #1-D: last line of file ends without a newline
+   
+..\Core\Src\car_attitude.c(82): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+      v_line_target = v_line_target > MAX_V_REAL ? MAX_V_REAL : v_line_target;
+..\Core\Src\car_attitude.c(82): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+      v_line_target = v_line_target > MAX_V_REAL ? MAX_V_REAL : v_line_target;
+..\Core\Src\car_attitude.c(83): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+      v_line_target = v_line_target < -MAX_V_REAL ? -MAX_V_REAL : v_line_target;
+..\Core\Src\car_attitude.c(83): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+      v_line_target = v_line_target < -MAX_V_REAL ? -MAX_V_REAL : v_line_target;
+..\Core\Src\car_attitude.c: 5 warnings, 0 errors
+compiling MusicPlayer.c...
+../Core/Inc/MusicPlayer.h(75): warning:  #1295-D: Deprecated declaration MusicPlayer_Init - give arg types
+  void MusicPlayer_Init();
+..\Core\Src\MusicPlayer.c: 1 warning, 0 errors
+compiling inv_imu_driver.c...
+compiling inv_imu_transport.c...
+compiling oled_spi_V0.2.c...
+compiling lcd_fonts.c...
+compiling freertos.c...
+../Core/Inc/pid.h(62): warning:  #1-D: last line of file ends without a newline
+   
+../Core/Inc/quadspi.h(120): warning:  #1295-D: Deprecated declaration QSPI_W25Qxx_Test - give arg types
+  int8_t  QSPI_W25Qxx_Test();
+../Core/Inc/keyboard.h(44): warning:  #1295-D: Deprecated declaration key_callback1 - give arg types
+  void key_callback1();
+../Core/Inc/keyboard.h(50): warning:  #1-D: last line of file ends without a newline
+  #endif /* __MATRIX_KEY_H */
+../Core/Inc/MusicPlayer.h(75): warning:  #1295-D: Deprecated declaration MusicPlayer_Init - give arg types
+  void MusicPlayer_Init();
+../Core/Src/freertos.c(212): warning:  #1295-D: Deprecated declaration Task_APP - give arg types
+  void Task_APP();
+../Core/Src/freertos.c(343): warning:  #177-D: variable "buf"  was declared but never referenced
+  		char buf[64];
+../Core/Src/freertos.c(397): warning:  #177-D: variable "data"  was declared but never referenced
+  	  uint8_t data[8] = {1,2,3,4,5,6,7,8};
+../Core/Src/freertos.c: 8 warnings, 0 errors
+compiling ARobot.c...
+..\Core\Src\ARobot.c(167): warning:  #870-D: invalid multibyte character sequence
+      debug(
+..\Core\Src\ARobot.c(167): warning:  #870-D: invalid multibyte character sequence
+      debug(
+..\Core\Src\ARobot.c(167): warning:  #870-D: invalid multibyte character sequence
+      debug(
+..\Core\Src\ARobot.c(206): warning:  #870-D: invalid multibyte character sequence
+      debug(
+..\Core\Src\ARobot.c(206): warning:  #870-D: invalid multibyte character sequence
+      debug(
+..\Core\Src\ARobot.c(206): warning:  #870-D: invalid multibyte character sequence
+      debug(
+..\Core\Src\ARobot.c: 6 warnings, 0 errors
+compiling stm32h7xx_it.c...
+compiling lcd_image.c...
+compiling roboticArm.c...
+..\Core\Src\roboticArm.c(57): warning:  #223-D: function "osDelay" declared implicitly
+      osDelay(1000);
+..\Core\Src\roboticArm.c(106): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+      int position = (angle / 300.0) * 1024; 
+..\Core\Src\roboticArm.c(120): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+      int offset = (angle / 300.0) * 1024; 
+..\Core\Src\roboticArm.c: 3 warnings, 0 errors
+compiling main.c...
+../Core/Inc/quadspi.h(120): warning:  #1295-D: Deprecated declaration QSPI_W25Qxx_Test - give arg types
+  int8_t  QSPI_W25Qxx_Test();
+../Core/Inc/pid.h(62): warning:  #1-D: last line of file ends without a newline
+   
+../Core/Inc/MusicPlayer.h(75): warning:  #1295-D: Deprecated declaration MusicPlayer_Init - give arg types
+  void MusicPlayer_Init();
+../Core/Src/main.c: 3 warnings, 0 errors
+compiling PWM.c...
+compiling gpio.c...
+compiling quadspi.c...
+../Core/Inc/quadspi.h(120): warning:  #1295-D: Deprecated declaration QSPI_W25Qxx_Test - give arg types
+  int8_t  QSPI_W25Qxx_Test();
+..\Core\Src\quadspi.c(187): warning:  #223-D: function "printf" declared implicitly
+  		printf ("W25Q256 OK,flash ID:%X\r\n",Device_ID);		// ³õÊ¼»¯³É¹¦
+..\Core\Src\quadspi.c(192): warning:  #223-D: function "printf" declared implicitly
+  		printf ("W25Q256 ERROR!!!!!  ID:%X\r\n",Device_ID);	// ³õÊ¼»¯Ê§°Ü	
+..\Core\Src\quadspi.c(879): warning:  #223-D: function "printf" declared implicitly
+  		printf ("\r\nW25Q256 ²Á³ý³É¹¦, ²Á³ý32K×Ö½ÚËùÐèÊ±¼ä: %d ms\r\n",ExecutionTime);		
+..\Core\Src\quadspi.c(883): warning:  #223-D: function "printf" declared implicitly
+  		printf ("\r\n ²Á³ýÊ§°Ü!!!!!  ´íÎó´úÂë:%d\r\n",QSPI_Status_Test);
+..\Core\Src\quadspi.c(901): warning:  #223-D: function "printf" declared implicitly
+  		printf ("\r\nÐ´Èë³É¹¦,Êý¾Ý´óÐ¡£º%d KB, ºÄÊ±: %d ms, Ð´ÈëËÙ¶È£º%.2f KB/s\r\n",W25Qxx_NumByteToTest/1024,ExecutionTime,ExecutionSpeed);		
+..\Core\Src\quadspi.c(905): warning:  #223-D: function "printf" declared implicitly
+  		printf ("\r\nÐ´Èë´íÎó!!!!!  ´íÎó´úÂë:%d\r\n",QSPI_Status_Test);
+..\Core\Src\quadspi.c(911): warning:  #223-D: function "printf" declared implicitly
+  	printf ("\r\n*****************************************************************************************************\r\n");				
+..\Core\Src\quadspi.c: 8 warnings, 0 errors
+compiling pid.c...
+../Core/Inc/pid.h(62): warning:  #1-D: last line of file ends without a newline
+   
+..\Core\Src\pid.c(118): warning:  #1-D: last line of file ends without a newline
+   
+..\Core\Src\pid.c: 2 warnings, 0 errors
+compiling delay.c...
+compiling lcd_model.c...
+compiling i2c.c...
+compiling memorymap.c...
+compiling read_aux_data_mode.c...
+..\Core\Src\read_aux_data_mode.c(90): warning:  #223-D: function "SPI4_ReadWriteByte" declared implicitly
+      SPI4_ReadWriteByte(reg);
+..\Core\Src\read_aux_data_mode.c(111): warning:  #223-D: function "SPI4_ReadWriteByte" declared implicitly
+      SPI4_ReadWriteByte(reg);
+..\Core\Src\read_aux_data_mode.c(28): warning:  #550-D: variable "discard_accel_samples"  was set but never used
+  static uint8_t discard_accel_samples; /* Indicates how many accel samples should be discarded */
+..\Core\Src\read_aux_data_mode.c(29): warning:  #550-D: variable "discard_gyro_samples"  was set but never used
+  static uint8_t discard_gyro_samples; /* Indicates how many gyro samples should be discarded */
+..\Core\Src\read_aux_data_mode.c: 4 warnings, 0 errors
+compiling IMU.c...
+../Core/Inc/pid.h(62): warning:  #1-D: last line of file ends without a newline
+   
+..\Core\Src\IMU.c: 1 warning, 0 errors
+compiling Motor.c...
+../Core/Inc/pid.h(62): warning:  #1-D: last line of file ends without a newline
+   
+..\Core\Src\Motor.c(110): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+      int v_enc=V_REAL_TO_ENC*v_real;
+..\Core\Src\Motor.c(188): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+      motor->v_real=motor->v_enc*V_ENC_TO_REAL;//è®°å½•å®žé™…é€Ÿåº¦ï¼Œç”¨äºŽæ˜¾ç¤?
+..\Core\Src\Motor.c(208): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+  	return motor->total_enc*1.0F/V_REAL_TO_ENC;
+..\Core\Src\Motor.c: 4 warnings, 0 errors
+compiling keyboard.c...
+../Core/Inc/keyboard.h(44): warning:  #1295-D: Deprecated declaration key_callback1 - give arg types
+  void key_callback1();
+../Core/Inc/keyboard.h(50): warning:  #1-D: last line of file ends without a newline
+  #endif /* __MATRIX_KEY_H */
+..\Core\Src\keyboard.c(40): warning:  #1295-D: Deprecated declaration Task_APP_test - give arg types
+  void Task_APP_test();
+..\Core\Src\keyboard.c(110): warning:  #167-D: argument of type "void (*)()" is incompatible with parameter of type "TaskFunction_t"
+  	xTaskCreate(Task_APP_test, "APP", configMINIMAL_STACK_SIZE * 2, NULL, osPriorityNormal2, NULL);
+..\Core\Src\keyboard.c(111): warning:  #1-D: last line of file ends without a newline
+  }
+..\Core\Src\keyboard.c: 5 warnings, 0 errors
+compiling usb_otg.c...
+compiling stm32h7xx_hal_flash.c...
+compiling usart.c...
+compiling stm32h7xx_hal_flash_ex.c...
+compiling stm32h7xx_hal_gpio.c...
+compiling stm32h7xx_hal_cortex.c...
+compiling uart_fifo.c...
+compiling tim.c...
+../Core/Inc/pid.h(62): warning:  #1-D: last line of file ends without a newline
+   
+..\Core\Src\tim.c: 1 warning, 0 errors
+compiling spi.c...
+..\Core\Src\spi.c(945): warning:  #223-D: function "sprintf" declared implicitly
+  		sprintf( Number_Buffer , "%0.*d",len, number );	// ï¿½ï¿½ number ×ªï¿½ï¿½ï¿½ï¿½ï¿½Ö·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê¾		
+..\Core\Src\spi.c(949): warning:  #223-D: function "sprintf" declared implicitly
+  		sprintf( Number_Buffer , "%*d",len, number );	// ï¿½ï¿½ number ×ªï¿½ï¿½ï¿½ï¿½ï¿½Ö·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê¾		
+..\Core\Src\spi.c(986): warning:  #223-D: function "sprintf" declared implicitly
+  		sprintf( Number_Buffer , "%0*.*lf",len,decs, decimals );	// ï¿½ï¿½ number ×ªï¿½ï¿½ï¿½ï¿½ï¿½Ö·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê¾		
+..\Core\Src\spi.c(990): warning:  #223-D: function "sprintf" declared implicitly
+  		sprintf( Number_Buffer , "%*.*lf",len,decs, decimals );	// ï¿½ï¿½ number ×ªï¿½ï¿½ï¿½ï¿½ï¿½Ö·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê¾		
+..\Core\Src\spi.c(1913): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+      _RoateValue.angle = RADIAN(angle);
+..\Core\Src\spi.c(1961): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+      x = (x + a / x) * 0.5;
+..\Core\Src\spi.c: 6 warnings, 0 errors
+compiling stm32h7xx_hal_rcc.c...
+compiling stm32h7xx_hal_rcc_ex.c...
+compiling stm32h7xx_hal_pwr.c...
+compiling stm32h7xx_hal_mdma.c...
+compiling stm32h7xx_hal_qspi.c...
+compiling stm32h7xx_hal_i2c_ex.c...
+compiling stm32h7xx_hal_hsem.c...
+compiling stm32h7xx_hal.c...
+compiling stm32h7xx_hal_exti.c...
+compiling stm32h7xx_hal_dma_ex.c...
+compiling stm32h7xx_hal_i2c.c...
+compiling stm32h7xx_hal_pwr_ex.c...
+compiling stm32h7xx_hal_dma.c...
+compiling stm32h7xx_ll_delayblock.c...
+compiling croutine.c...
+compiling stm32h7xx_hal_spi_ex.c...
+compiling event_groups.c...
+compiling stm32h7xx_hal_uart_ex.c...
+compiling stm32h7xx_hal_pcd.c...
+compiling list.c...
+compiling queue.c...
+compiling stream_buffer.c...
+compiling timers.c...
+compiling stm32h7xx_hal_pcd_ex.c...
+compiling heap_4.c...
+compiling tasks.c...
+compiling port.c...
+compiling SCS.c...
+compiling SCSerail.c...
+compiling SCSCL.c...
+compiling SMS_STS.c...
+compiling stm32h7xx_hal_tim_ex.c...
+compiling stm32h7xx_hal_spi.c...
+compiling stm32h7xx_ll_usb.c...
+compiling system_stm32h7xx.c...
+compiling stm32h7xx_hal_uart.c...
+compiling stm32h7xx_hal_tim.c...
+compiling WritePos.c...
+..\examples\SMS_STS\WritePos.c(31): warning:  #550-D: variable "Pos"  was set but never used
+  	int Pos;
+..\examples\SMS_STS\WritePos.c(32): warning:  #550-D: variable "Speed"  was set but never used
+    int Speed;
+..\examples\SMS_STS\WritePos.c: 2 warnings, 0 errors
+compiling cmsis_os2.c...
+linking...
+Program Size: Code=49244 RO-data=4816 RW-data=324 ZI-data=180852  
+FromELF: creating hex file...
+"STMH750VBT6_Celebright_V2\STMH750VBT6_Celebright_V2.axf" - 0 Error(s), 76 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.5.8.0.pack
+                ARM.CMSIS.5.8.0
+                CMSIS (Common Microcontroller Software Interface Standard)
+   * Component: CORE Version: 5.5.0
+
+Package Vendor: Keil
+                https://www.keil.com/pack/Keil.STM32H7xx_DFP.4.0.0.pack
+                Keil.STM32H7xx_DFP.4.0.0
+                STMicroelectronics STM32H7 Series Device Support
+
+<h2>Collection of Component include folders:</h2>
+  .\RTE\_STMH750VBT6_Celebright_V2
+  E:\CS_APPS_Sources\Keil\ARM\CMSIS\5.8.0\CMSIS\Core\Include
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE:5.5.0
+      Include file:  CMSIS\Core\Include\tz_context.h
+Build Time Elapsed:  00:01:21
+</pre>
+</body>
+</html>

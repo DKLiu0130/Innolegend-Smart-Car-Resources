@@ -1,0 +1,9 @@
+stmh750vbt6_celebright_v2\inv_imu_driver.o: ..\Core\Src\inv_imu_driver.c
+stmh750vbt6_celebright_v2\inv_imu_driver.o: ../Core/Inc/inv_imu_driver.h
+stmh750vbt6_celebright_v2\inv_imu_driver.o: ../Core/Inc/inv_imu_defs.h
+stmh750vbt6_celebright_v2\inv_imu_driver.o: E:\CS_APPS\Keil\ARM\ARMCC\Bin\..\include\stdint.h
+stmh750vbt6_celebright_v2\inv_imu_driver.o: ../Core/Inc/inv_imu.h
+stmh750vbt6_celebright_v2\inv_imu_driver.o: ../Core/Inc/inv_imu_regmap_le.h
+stmh750vbt6_celebright_v2\inv_imu_driver.o: ../Core/Inc/inv_imu_transport.h
+stmh750vbt6_celebright_v2\inv_imu_driver.o: E:\CS_APPS\Keil\ARM\ARMCC\Bin\..\include\string.h
+stmh750vbt6_celebright_v2\inv_imu_driver.o: ../Core/Inc/inv_imu_version.h

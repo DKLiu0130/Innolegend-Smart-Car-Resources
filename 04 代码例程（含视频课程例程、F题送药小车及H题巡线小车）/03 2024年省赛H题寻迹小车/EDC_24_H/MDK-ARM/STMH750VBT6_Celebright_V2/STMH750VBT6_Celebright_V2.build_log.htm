@@ -1,0 +1,91 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: ¦ÌVision V5.39.0.0
+Copyright (C) 2023 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: 32113 3211362, HP Inc., LIC=NQQMA-1P9FZ-FW22N-YYB6M-SP41D-UPZKV
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Plus  Version: 5.39.0.0
+Toolchain Path:  C:\Keil_v5\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 7 (build 960)
+Assembler:       Armasm.exe V5.06 update 7 (build 960)
+Linker/Locator:  ArmLink.exe V5.06 update 7 (build 960)
+Library Manager: ArmAr.exe V5.06 update 7 (build 960)
+Hex Converter:   FromElf.exe V5.06 update 7 (build 960)
+CPU DLL:         SARMCM3.DLL V5.39.0.0
+Dialog DLL:      DCM.DLL V1.17.5.0
+Target DLL:      STLink\ST-LINKIII-KEIL_SWO.dll V3.2.0.0
+Dialog DLL:      TCM.DLL V1.56.4.0
+ 
+<h2>Project:</h2>
+C:\Users\32113\Desktop\EDC_24_H\MDK-ARM\STMH750VBT6_Celebright_V2.uvprojx
+Project File Date:  07/08/2025
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 7 (build 960)', folder: 'C:\Keil_v5\ARM\ARMCC\Bin'
+Build target 'STMH750VBT6_Celebright_V2'
+Note: source file '..\Core\Src\gpio.c' - object file renamed from 'STMH750VBT6_Celebright_V2\gpio.o' to 'STMH750VBT6_Celebright_V2\gpio_1.o'.
+Note: source file '..\Core\Src\memorymap.c' - object file renamed from 'STMH750VBT6_Celebright_V2\memorymap.o' to 'STMH750VBT6_Celebright_V2\memorymap_1.o'.
+Note: source file '..\Core\Src\quadspi.c' - object file renamed from 'STMH750VBT6_Celebright_V2\quadspi.o' to 'STMH750VBT6_Celebright_V2\quadspi_1.o'.
+Note: source file '..\Core\Src\spi.c' - object file renamed from 'STMH750VBT6_Celebright_V2\spi.o' to 'STMH750VBT6_Celebright_V2\spi_1.o'.
+Note: source file '..\Core\Src\tim.c' - object file renamed from 'STMH750VBT6_Celebright_V2\tim.o' to 'STMH750VBT6_Celebright_V2\tim_1.o'.
+Note: source file '..\Core\Src\usart.c' - object file renamed from 'STMH750VBT6_Celebright_V2\usart.o' to 'STMH750VBT6_Celebright_V2\usart_1.o'.
+Note: source file '..\Core\Src\usb_otg.c' - object file renamed from 'STMH750VBT6_Celebright_V2\usb_otg.o' to 'STMH750VBT6_Celebright_V2\usb_otg_1.o'.
+compiling freertos.c...
+../Core/Inc/pid.h(62): warning:  #1-D: last line of file ends without a newline
+   
+../Core/Inc/keyboard.h(44): warning:  #1295-D: Deprecated declaration key_callback1 - give arg types
+  void key_callback1();
+../Core/Inc/keyboard.h(50): warning:  #1-D: last line of file ends without a newline
+  #endif /* __MATRIX_KEY_H */
+../Core/Inc/MusicPlayer.h(75): warning:  #1295-D: Deprecated declaration MusicPlayer_Init - give arg types
+  void MusicPlayer_Init();
+../Core/Src/freertos.c(211): warning:  #1295-D: Deprecated declaration Task_APP - give arg types
+  void Task_APP();
+../Core/Src/freertos.c(212): warning:  #1295-D: Deprecated declaration Task_24H_1 - give arg types
+  void Task_24H_1();
+../Core/Src/freertos.c(213): warning:  #1295-D: Deprecated declaration Task_24H_2 - give arg types
+  void Task_24H_2();
+../Core/Src/freertos.c(214): warning:  #1295-D: Deprecated declaration Task_24H_3 - give arg types
+  void Task_24H_3();
+../Core/Src/freertos.c(215): warning:  #1295-D: Deprecated declaration Task_24H_4 - give arg types
+  void Task_24H_4();
+../Core/Src/freertos.c(346): warning:  #177-D: variable "buf"  was declared but never referenced
+  		char buf[64];
+../Core/Src/freertos.c(400): warning:  #177-D: variable "data"  was declared but never referenced
+  	  uint8_t data[8] = {1,2,3,4,5,6,7,8};
+../Core/Src/freertos.c: 11 warnings, 0 errors
+linking...
+Program Size: Code=49352 RO-data=4812 RW-data=324 ZI-data=115316  
+FromELF: creating hex file...
+"STMH750VBT6_Celebright_V2\STMH750VBT6_Celebright_V2.axf" - 0 Error(s), 11 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.5.9.0.pack
+                ARM::CMSIS@5.9.0
+                CMSIS (Common Microcontroller Software Interface Standard)
+   * Component: CORE Version: 5.6.0
+
+Package Vendor: Keil
+                https://www.keil.com/pack/Keil.STM32H7xx_DFP.3.1.1.pack
+                Keil::STM32H7xx_DFP@3.1.1
+                STMicroelectronics STM32H7 Series Device Support and Examples
+
+<h2>Collection of Component include folders:</h2>
+  ./RTE/_STMH750VBT6_Celebright_V2
+  C:/Users/32113/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include
+  C:/Users/32113/AppData/Local/Arm/Packs/Keil/STM32H7xx_DFP/3.1.1/Drivers/CMSIS/Device/ST/STM32H7xx/Include
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE@5.6.0
+      Include file:  CMSIS/Core/Include/tz_context.h
+Build Time Elapsed:  00:00:05
+</pre>
+</body>
+</html>
